@@ -1,0 +1,46 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 35px;
+  display: flex;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid;
+  padding: 7px 10px;
+}
+
+th {
+  text-align: left;
+  padding-right: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+  main {
+    flex-direction: column;
+  }
+
+  th, td {
+    border: solid;
+    padding: 5px;
+  }
+
+  div:nth-child(2) {
+    align-items: center;
+  }
+}
